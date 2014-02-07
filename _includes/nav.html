@@ -1,0 +1,28 @@
+ 
+ <div class="row">
+
+
+    <div class="row">
+      <div class="large-12 columns">
+   
+      	<div class="panel">
+	        <h3>We&rsquo;re stoked you want to check out Target Creative repository! </h3>
+	        <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going. Once you've exhausted the fun in this document, you should check out:</p>	        
+
+	        
+				<nav class="nav-primary" role="navigation" >
+				    <ul>
+				        {% for p in site.pages %}
+				        <li>
+				        	<a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+				        </li>
+				        {% endfor %}
+				    </ul>
+				</nav>		
+		
+
+		</div>  <!-- end panel --> 
+
+      	</div>
+      </div>
+    </div>
