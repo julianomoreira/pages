@@ -1,0 +1,28 @@
+ 
+ <div class="row">
+
+
+    <div class="row">
+      <div class="large-12 columns">
+   
+      	<div class="panel">
+	        <h3>We&rsquo;re stoked you want to check out Target Creative repository! </h3>
+	        <p>To get going, navigate through the pages below. We're collecting patterns, styles, and will build a really cool repository for Target's teams across the enterprise. This repo will speed up development while improving collaboration amongst different teams. Have a cool ideas for a UI pattern or interaction? Push it to this repo. Done.</p>	        
+
+	        
+				<nav class="nav-primary" role="navigation" >
+				    <ul>
+				        {% for p in site.pages %}
+				        <li>
+				        	<a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+				        </li>
+				        {% endfor %}
+				    </ul>
+				</nav>		
+		
+
+		</div>  <!-- end panel --> 
+
+      	</div>
+      </div>
+    </div>
